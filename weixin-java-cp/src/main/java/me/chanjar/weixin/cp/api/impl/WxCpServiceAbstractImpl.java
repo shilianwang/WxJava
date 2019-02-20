@@ -284,6 +284,11 @@ public abstract class WxCpServiceAbstractImpl<H, P> implements WxCpService, Requ
   public void setSessionManager(WxSessionManager sessionManager) {
     this.sessionManager = sessionManager;
   }
+  
+  @Override
+  public WxSessionManager getSessionManager() {
+    return this.sessionManager;
+  }
 
   @Override
   public String replaceParty(String mediaId) throws WxErrorException {
